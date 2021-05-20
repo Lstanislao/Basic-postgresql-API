@@ -1,6 +1,7 @@
 const Query = require('../db/query');
 const bcrypt = require('bcryptjs');
-const { errorMessage, status, successMessage } = require('../helpers/status')
+const { errorMessage, status, successMessage } = require('../helpers/status');
+
 
 
 // const getUsers = async (req,res) => {
@@ -71,7 +72,6 @@ const createUsuario = async (req, res) => {
     return res.status(status.error).send(errorMessage);
   }
 };
-
 
 /**
  * @description:al hacer login, se busca correo y se verifica que la contrasena sean iguales
